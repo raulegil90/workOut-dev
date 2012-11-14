@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  sets: 1
+  reps_or_min: 1
+
+two:
+  name: MyString
+  sets: 1
+  reps_or_min: 1

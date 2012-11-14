@@ -1,0 +1,23 @@
+<h1>YOUR PLANS</h1>
+<%= debug @user %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Fitness area</th>
+    <th>Description</th>
+  </tr>
+
+
+  <% @my_plans.each do |user_plan| %>
+  <tr>
+  	<%= debug user_plan %>
+  	<td><%= user_plan.title %></td>
+  	<td><%= user_plan.fitness_area %></td>
+  	<td><%= user_plan.description %></td>
+  </tr>
+  <% end %>
+</table>
+
+
+<%= link_to "Add a new plan", :controller => "users", :action => "add_plan", :user_id => @user.id %>
+<%= link_to "Logout", :logout %>

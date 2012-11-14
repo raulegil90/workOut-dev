@@ -1,0 +1,46 @@
+<h1>Hi <%= current_user.username %></h1>
+  <% if notice %>
+    <p><%= notice %></p>
+  <% end %>
+  <div class="username">
+    <h3><%= label_tag :username %></h3>
+    <%= current_user.username %>
+  </div>
+
+  <div class="email">
+    <h3><%= label_tag :email %></h3>
+    <%= current_user.email %>
+  </div>
+
+  <div class="age">
+    <h3><%= label_tag :age %></h3>
+    <%= current_user.age %>
+  </div>
+
+  <div class="gender">
+    <h3><%= label_tag :gender %></h3>
+    <%= current_user.gender %>
+  </div>
+
+  <div class="feet">
+    <h3><%= label_tag :feet %></h3>
+    <%= current_user.foot_height %>
+    <h3><%= label_tag :inches %></h3>
+    <%= current_user.inches_height %>
+  </div>
+
+  <div class="gender">
+    <h3><%= label_tag :weight_in_lbs %></h3>
+    <%= current_user.weight %><br /><br />
+  </div>
+
+  
+  <!--  <td><%= link_to 'Show', current_user %></td> !-->
+
+  <div class="actions">
+    <td><%= link_to 'Edit Profile', edit_user_path(current_user.id) %></td><br />   <!-- edits the user's profile !-->
+    <td><%= link_to 'View My Plans', user_plans_path(current_user.id) %>            <!-- view the user's workout plans !-->
+    <td><%= link_to 'Delete My Profile', current_user, method: :delete, data: { confirm: 'Are you sure?' } %></td><br />
+    <td><%= link_to 'Logout', :logout %>                                            <!-- logs out !-->
+  </div>
+

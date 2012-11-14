@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<%= debug @plan %>
+<p>
+  <b>Title:</b>
+  <%= @plan.title %>
+</p>
+
+<p>
+  <b>Fitness area:</b>
+  <%= @plan.fitness_area %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @plan.description %>
+</p>
+
+<%= link_to "View Plans", user_plans_path(@plan.user_id) %>
+<%= link_to "Logout", :logout %>
+

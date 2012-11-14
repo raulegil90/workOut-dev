@@ -1,0 +1,28 @@
+<h1>Listing plans</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Fitness area</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @plans.each do |plan| %>
+  <tr>
+    <%= debug plan %>
+    <td><%= plan.title %></td>
+    <td><%= plan.fitness_area %></td>
+    <td><%= plan.description %></td>
+    <td><%= link_to 'Edit', edit_plan_path(plan) %></td>
+    <td><%= link_to 'View Exercises', plan_exercises_path(plan.id) %></td> 
+    <td><%= link_to 'Destroy', plan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'New Plan', :new_user_plan, :user_id => @user.id %><br />
+<%= link_to 'Logout', :logout %>
+<br />

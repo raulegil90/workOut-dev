@@ -1,0 +1,29 @@
+<%= form_for(@new_plan) do |f| %>
+  <% if @new_plan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@new_plan.errors.count, "error") %> prohibited this plan from being saved:</h2>
+
+      <ul>
+      <% @new_plan.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<%= debug @new_plan %>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :fitness_area %><br />
+    <%= f.text_field :fitness_area %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :rows => 5 %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Submit Plan" %>
+  </div>
+<% end %>

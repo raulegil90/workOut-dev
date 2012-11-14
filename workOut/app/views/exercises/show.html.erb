@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<%= debug @exercise %>
+<p>
+  <b>Name:</b>
+  <%= @exercise.name %>
+</p>
+
+<p>
+  <b>Sets:</b>
+  <%= @exercise.sets %>
+</p>
+
+<p>
+  <b>Reps or min:</b>
+  <%= @exercise.reps_or_min %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_exercise_path(@exercise) %> |
+<%= link_to 'View Exercises', plan_exercises_path(@exercise.plan_id) %>
+<%= link_to 'Profile Page', users_path %>
+<%= link_to 'Logout', :logout %>

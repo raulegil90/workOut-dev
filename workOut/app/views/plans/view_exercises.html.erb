@@ -1,0 +1,25 @@
+<h1>Exercises for <%= @plan.title %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Sets</th>
+    <th>Reps or min</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @exercise.each do |current_exercise| %>
+  <tr>
+    <td><%= current_exercise.name %></td>
+    <td><%= current_exercise.sets %></td>
+    <td><%= current_exercise.reps_or_min %></td>
+    <td><%= link_to 'Show', current_exercise %></td>
+    <td><%= link_to 'Edit', edit_exercise_path(current_exercise) %></td>
+    <td><%= link_to 'Destroy', current_exercise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to "Logout", :logout %>
