@@ -39268,3 +39268,423 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-15 11:32:47 -0500
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/plans/1/exercises/new" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Processing by ExercisesController#new as HTML
+  Parameters: {"plan_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlan Load (0.2ms)[0m  SELECT `plans`.* FROM `plans` WHERE `plans`.`id` = 1 LIMIT 1
+  Rendered exercises/_form.html.erb (34.6ms)
+  Rendered exercises/new.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 100ms (Views: 46.9ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/exercises.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /exercises.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /plans.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exercises.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /exercises.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /plans.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:47 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/plans/1/exercises/new" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Processing by ExercisesController#new as HTML
+  Parameters: {"plan_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlan Load (0.2ms)[0m  SELECT `plans`.* FROM `plans` WHERE `plans`.`id` = 1 LIMIT 1
+  Rendered exercises/_form.html.erb (4.3ms)
+  Rendered exercises/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/exercises.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /exercises.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /plans.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exercises.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /exercises.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /plans.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:48 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/plans/1/exercises/new" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Processing by ExercisesController#new as HTML
+  Parameters: {"plan_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlan Load (0.2ms)[0m  SELECT `plans`.* FROM `plans` WHERE `plans`.`id` = 1 LIMIT 1
+  Rendered exercises/_form.html.erb (4.4ms)
+  Rendered exercises/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/exercises.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /exercises.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /plans.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exercises.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /exercises.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /plans.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:49 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/plans/1/exercises/new" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Processing by ExercisesController#new as HTML
+  Parameters: {"plan_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlan Load (0.2ms)[0m  SELECT `plans`.* FROM `plans` WHERE `plans`.`id` = 1 LIMIT 1
+  Rendered exercises/_form.html.erb (4.7ms)
+  Rendered exercises/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/exercises.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /exercises.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/plans.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /plans.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exercises.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /exercises.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /plans.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-15 14:11:50 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/plans/1/exercises/new" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Processing by ExercisesController#new as HTML
+  Parameters: {"plan_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlan Load (0.2ms)[0m  SELECT `plans`.* FROM `plans` WHERE `plans`.`id` = 1 LIMIT 1
+  Rendered exercises/_form.html.erb (4.1ms)
+  Rendered exercises/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/exercises.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /exercises.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /plans.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exercises.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /exercises.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /plans.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:07 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/plans/1/exercises/new" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Processing by ExercisesController#new as HTML
+  Parameters: {"plan_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlan Load (0.2ms)[0m  SELECT `plans`.* FROM `plans` WHERE `plans`.`id` = 1 LIMIT 1
+  Rendered exercises/_form.html.erb (2.9ms)
+  Rendered exercises/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/exercises.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /exercises.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /plans.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exercises.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /exercises.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plans.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /plans.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-15 14:12:33 -0500
+Served asset /application.js - 304 Not Modified (2ms)
