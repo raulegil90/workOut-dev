@@ -1,0 +1,30 @@
+<%= form_for(@exercise) do |f| %> <!-- This will direct the form to the exercise update method !-->
+  <% if @exercise.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@exercise.errors.count, "error") %> prohibited this exercise from being saved:</h2>
+
+      <ul>
+      <% @exercise.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :sets %><br />
+    <%= f.number_field :sets %>
+  </div>
+  <div class="field">
+    <%= f.label :reps_or_min %><br />
+    <%= f.number_field :reps_or_min %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+    <!-- I create a button to direct the action to the create method in the exercise controller. I don't think this is necessary but I'd rather have it anyway !-->
+  </div>
+<% end %>
