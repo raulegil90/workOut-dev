@@ -78,11 +78,12 @@ class PlansController < ApplicationController
   # DELETE /plans/1
   # DELETE /plans/1.json
   def destroy
+    @user = User.find(session[:user_id])
     @plan = Plan.find(params[:id])
     @plan.destroy
 
     respond_to do |format|
-      format.html { redirect_to plans_url }
+      format.html { redirect_to user_plans_url(@user.id) }
       format.json { head :no_content }
     end
   end

@@ -15,7 +15,7 @@ class ExercisesController < ApplicationController
   # GET /exercises/1.json
   def show
     @exercise = Exercise.find(params[:id])
-    @plan = Plan.find(params[:id])
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @exercise }
@@ -49,7 +49,7 @@ class ExercisesController < ApplicationController
     if @exercise.update_attributes(params[:exercise])
       respond_to do |format|
         if @exercise.save
-          format.html { redirect_to @exercise, :id => @exercise.id, :plan_id => @exercise.plan_id, notice: 'Exercise was successfully created.' }
+          format.html { redirect_to @exercise, :id => @exercise.id, notice: 'Exercise was successfully created.' }
           format.json { render json: @exercise, status: :created, location: @exercise }
         else
           format.html { render action: "new" }
@@ -79,10 +79,11 @@ class ExercisesController < ApplicationController
   # DELETE /exercises/1.json
   def destroy
     @exercise = Exercise.find(params[:id])
-    @exercise.destroy
+    @plan = Plan.find(@exercise.plan_id)
+    Exercise.delete(@exercise.id)
 
     respond_to do |format|
-      format.html { redirect_to exercises_url }
+      format.html { redirect_to plan_exercises_path(@plan.id) }
       format.json { head :no_content }
     end
   end
