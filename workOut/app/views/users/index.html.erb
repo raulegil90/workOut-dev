@@ -1,7 +1,6 @@
 <h1>Hi <%= current_user.username %></h1>
-  <% if notice %>
-    <p><%= notice %></p>
-  <% end %>
+
+<div id="cUserDashBoard">
   <div class="username">
     <h3><%= label_tag :username %></h3>
     <%= current_user.username %>
@@ -33,14 +32,5 @@
     <h3><%= label_tag :weight_in_lbs %></h3>
     <%= current_user.weight %><br /><br />
   </div>
-
-  
-  <!--  <td><%= link_to 'Show', current_user %></td> !-->
-
-  <div class="actions">
-    <td><%= link_to 'Edit Profile', edit_user_path(current_user.id) %></td><br />   <!-- edits the user's profile !-->
-    <td><%= link_to 'View My Plans', user_plans_path(current_user.id) %>            <!-- view the user's workout plans !-->
-    <td><%= link_to 'Delete My Profile', current_user, method: :delete, data: { confirm: 'Are you sure?' } %></td><br />
-    <td><%= link_to 'Logout', :logout %>                                            <!-- logs out !-->
-  </div>
+</div>
 

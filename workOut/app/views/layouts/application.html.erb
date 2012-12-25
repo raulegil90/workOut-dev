@@ -7,7 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <div id="top_nav">
+  	<ul>
+    <% if current_user %>
+      <%= link_to "Edit Profile", edit_user_path(current_user.id) %>
+      <%= link_to "View My Plans", user_plans_path(current_user.id) %>
+      <%= link_to 'Add New Plan', new_user_plan_path(@user) %><br />
+      <%= link_to 'Delete My Profile', current_user, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to "Logout", :logout %>
+    <% else %>
+      <%= link_to "Register", new_user_path %> |
+      <%= link_to "Login", :login %>
+    <% end %>
+</ul>
+  </div>
+  <div>
+    <p id="notice"><%= notice %></p>
+    <p id="alert"><%= alert %></p>
+  </div>
 <%= yield %>
 
 </body>

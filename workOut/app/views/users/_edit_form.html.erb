@@ -35,7 +35,7 @@
   </div>
   <div class="field">
   	<%= f.label :weight_in_lbs %>
-  	<%= f.text_field :weight %>
+  	<%= f.select :weight, (80..500).to_a %>
   </div>
   <div class="actions">
   	<%= f.submit %>
